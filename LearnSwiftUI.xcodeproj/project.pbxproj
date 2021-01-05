@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4E26CDBA25A3D5520069A40E /* Comfortaa-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E26CDBC25A3D5520069A40E /* Comfortaa-VariableFont_wght.ttf */; };
+		4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDBE25A48E4B0069A40E /* InfoView.swift */; };
 		4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */; };
 		4EC4340825A376B600796A59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340725A376B600796A59 /* ContentView.swift */; };
 		4EC4340A25A376BC00796A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4340925A376BC00796A59 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 
 /* Begin PBXFileReference section */
 		4E26CDBB25A3D5520069A40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Comfortaa-VariableFont_wght.ttf"; sourceTree = "<group>"; };
+		4E26CDBE25A48E4B0069A40E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4EC4340225A376B600796A59 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUIApp.swift; sourceTree = "<group>"; };
 		4EC4340725A376B600796A59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 			children = (
 				4E26CD9E25A3C95B0069A40E /* Fonts */,
 				4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */,
+				4E26CDBE25A48E4B0069A40E /* InfoView.swift */,
 				4EC4340725A376B600796A59 /* ContentView.swift */,
 				4EC4340925A376BC00796A59 /* Assets.xcassets */,
 				4EC4340E25A376BC00796A59 /* Info.plist */,
@@ -151,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC4340825A376B600796A59 /* ContentView.swift in Sources */,
+				4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */,
 				4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
