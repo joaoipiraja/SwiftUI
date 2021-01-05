@@ -15,7 +15,7 @@ struct InfoView: View {
         RoundedRectangle(cornerRadius: 20).frame(height: 50).foregroundColor(.white).overlay(HStack{
             
             Image(systemName: imageName).foregroundColor(Color(UIColor(red: 0.56, green: 0.22, blue: 0.30, alpha: 1.00)))
-            
+
             Text(text)
         })
         .padding(.all)
@@ -23,8 +23,3 @@ struct InfoView: View {
 }
 
 
-struct InfoView_Previews: PreviewProvider {
-    static var previews: some View {
-        InfoView(text: "+55 (85) 999211825", imageName: "phone.fill")
-    }
-}
