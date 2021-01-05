@@ -10,7 +10,8 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         
-        DiceGameUIView(leftDiceNumber: 1, rightDiceNumber: 1)
+        HackNews()
+        //DiceGameUIView(leftDiceNumber: 1, rightDiceNumber: 1)
         //BusinessCardView(imageName: "profilePicture", name: "João Victor", jobName: "IOS Development", phoneNumber: "+55 (85) 999211825", email: "joaovictorpiraja@gmail.com")
         
         

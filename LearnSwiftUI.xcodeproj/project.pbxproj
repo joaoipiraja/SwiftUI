@@ -11,6 +11,11 @@
 		4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDBE25A48E4B0069A40E /* InfoView.swift */; };
 		4E26CDC325A491D10069A40E /* BusinessCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDC225A491D10069A40E /* BusinessCardView.swift */; };
 		4E26CDD325A4AAEE0069A40E /* DiceGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDD225A4AAEE0069A40E /* DiceGameUIView.swift */; };
+		4E26CDD825A4D5F10069A40E /* HackNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDD725A4D5F10069A40E /* HackNews.swift */; };
+		4E26CDDC25A4DAA80069A40E /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDDB25A4DAA80069A40E /* NetworkManager.swift */; };
+		4E26CDE025A4DBFF0069A40E /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDDF25A4DBFF0069A40E /* PostData.swift */; };
+		4E26CDE325A4E3200069A40E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDE225A4E3200069A40E /* DetailView.swift */; };
+		4E26CDE625A4E7C70069A40E /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDE525A4E7C70069A40E /* WebView.swift */; };
 		4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */; };
 		4EC4340825A376B600796A59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340725A376B600796A59 /* ContentView.swift */; };
 		4EC4340A25A376BC00796A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4340925A376BC00796A59 /* Assets.xcassets */; };
@@ -22,6 +27,11 @@
 		4E26CDBE25A48E4B0069A40E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4E26CDC225A491D10069A40E /* BusinessCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardView.swift; sourceTree = "<group>"; };
 		4E26CDD225A4AAEE0069A40E /* DiceGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGameUIView.swift; sourceTree = "<group>"; };
+		4E26CDD725A4D5F10069A40E /* HackNews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackNews.swift; sourceTree = "<group>"; };
+		4E26CDDB25A4DAA80069A40E /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		4E26CDDF25A4DBFF0069A40E /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
+		4E26CDE225A4E3200069A40E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		4E26CDE525A4E7C70069A40E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		4EC4340225A376B600796A59 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUIApp.swift; sourceTree = "<group>"; };
 		4EC4340725A376B600796A59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,8 +79,21 @@
 		4E26CDD525A4D2DF0069A40E /* Hack News */ = {
 			isa = PBXGroup;
 			children = (
+				4E26CDDA25A4DA7A0069A40E /* Models */,
+				4E26CDD725A4D5F10069A40E /* HackNews.swift */,
+				4E26CDE225A4E3200069A40E /* DetailView.swift */,
+				4E26CDE525A4E7C70069A40E /* WebView.swift */,
 			);
 			path = "Hack News";
+			sourceTree = "<group>";
+		};
+		4E26CDDA25A4DA7A0069A40E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E26CDDB25A4DAA80069A40E /* NetworkManager.swift */,
+				4E26CDDF25A4DBFF0069A40E /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4EC433F925A376B600796A59 = {
@@ -184,10 +207,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC4340825A376B600796A59 /* ContentView.swift in Sources */,
+				4E26CDE625A4E7C70069A40E /* WebView.swift in Sources */,
+				4E26CDE325A4E3200069A40E /* DetailView.swift in Sources */,
+				4E26CDE025A4DBFF0069A40E /* PostData.swift in Sources */,
 				4E26CDD325A4AAEE0069A40E /* DiceGameUIView.swift in Sources */,
 				4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */,
+				4E26CDDC25A4DAA80069A40E /* NetworkManager.swift in Sources */,
 				4E26CDC325A491D10069A40E /* BusinessCardView.swift in Sources */,
 				4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */,
+				4E26CDD825A4D5F10069A40E /* HackNews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
