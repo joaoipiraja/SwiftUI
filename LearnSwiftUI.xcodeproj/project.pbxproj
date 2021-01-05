@@ -10,6 +10,7 @@
 		4E26CDBA25A3D5520069A40E /* Comfortaa-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E26CDBC25A3D5520069A40E /* Comfortaa-VariableFont_wght.ttf */; };
 		4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDBE25A48E4B0069A40E /* InfoView.swift */; };
 		4E26CDC325A491D10069A40E /* BusinessCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDC225A491D10069A40E /* BusinessCardView.swift */; };
+		4E26CDD325A4AAEE0069A40E /* DiceGameUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E26CDD225A4AAEE0069A40E /* DiceGameUIView.swift */; };
 		4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */; };
 		4EC4340825A376B600796A59 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EC4340725A376B600796A59 /* ContentView.swift */; };
 		4EC4340A25A376BC00796A59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EC4340925A376BC00796A59 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		4E26CDBB25A3D5520069A40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file; name = Base; path = "Base.lproj/Comfortaa-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		4E26CDBE25A48E4B0069A40E /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		4E26CDC225A491D10069A40E /* BusinessCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessCardView.swift; sourceTree = "<group>"; };
+		4E26CDD225A4AAEE0069A40E /* DiceGameUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiceGameUIView.swift; sourceTree = "<group>"; };
 		4EC4340225A376B600796A59 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUIApp.swift; sourceTree = "<group>"; };
 		4EC4340725A376B600796A59 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,21 @@
 			path = BusinessCardView;
 			sourceTree = "<group>";
 		};
+		4E26CDD025A4A8990069A40E /* Dice Game */ = {
+			isa = PBXGroup;
+			children = (
+				4E26CDD225A4AAEE0069A40E /* DiceGameUIView.swift */,
+			);
+			path = "Dice Game";
+			sourceTree = "<group>";
+		};
+		4E26CDD525A4D2DF0069A40E /* Hack News */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Hack News";
+			sourceTree = "<group>";
+		};
 		4EC433F925A376B600796A59 = {
 			isa = PBXGroup;
 			children = (
@@ -75,6 +92,8 @@
 		4EC4340425A376B600796A59 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				4E26CDD525A4D2DF0069A40E /* Hack News */,
+				4E26CDD025A4A8990069A40E /* Dice Game */,
 				4E26CDC625A494F80069A40E /* BusinessCardView */,
 				4E26CD9E25A3C95B0069A40E /* Fonts */,
 				4EC4340525A376B600796A59 /* LearnSwiftUIApp.swift */,
@@ -165,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EC4340825A376B600796A59 /* ContentView.swift in Sources */,
+				4E26CDD325A4AAEE0069A40E /* DiceGameUIView.swift in Sources */,
 				4E26CDBF25A48E4B0069A40E /* InfoView.swift in Sources */,
 				4E26CDC325A491D10069A40E /* BusinessCardView.swift in Sources */,
 				4EC4340625A376B600796A59 /* LearnSwiftUIApp.swift in Sources */,
