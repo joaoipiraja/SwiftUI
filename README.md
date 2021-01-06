@@ -93,12 +93,17 @@ Allow to overlap the elements
 ##### Set Color: ``` Color(UIColor(red: 0.87, green: 0.60, blue: 0.40, alpha: 1.00)).edgesIgnoringSafeArea(.all)``` 
 ##### Set Image: ``` Image(imageName).resizable().edgesIgnoringSafeArea(.all)``` 
 
+###### 🤯 Tip: The easiest way to work with Color is using Color(COLOR LITERAL)
+
 ### Button
 ```
 Button(action: {
     //Action
   }, label: {
-  Text("Rool").font(.system(size: 50)).foregroundColor(.white).padding(.horizontal)
+  
+  //Label Content
+  Text("Rool").font(.system(size: 50)).foregroundColor(.white).padding(.horizontal) 
+  
  }).background(Color(#colorLiteral(red: 0.6097301841, green: 0.1105430648, blue: 0.1225960776, alpha: 1)))
 ```
 
@@ -116,12 +121,12 @@ Button(action: {
 
 ##### Fonts: 
 ```
-Text().font(Font.custom("Comfortaa", size: 40)) //custom font
-Text().font(.system(size: 25))
-Text().font(.title)
+Text("").font(Font.custom("Comfortaa", size: 40)) //custom font
+Text("").font(.system(size: 25))
+Text("").font(.title)
 
 ```
-##### ForegroundColor: ```Text("Olá").foregroundColor(.blue) ```
+##### Text Color: ```Text("").foregroundColor(.blue) ```
 
 ##### WebView with UIViewRepresentable:
 
@@ -323,6 +328,15 @@ struct ContentView: View {
     }
 }
 
+```
+#### DetailView
+```Swift
+struct DetailView: View {
+    var url:String?
+    var body: some View {
+        WebView(urlString: url)
+    }
+}
 ```
 #### NetworkManager
 ```Swift
