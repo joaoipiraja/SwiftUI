@@ -264,7 +264,7 @@ struct DiceView: View {
 
 ## Hack News 
 
-[<img src="/screenshots/screenshot2.png" width="250" />](screenshot2.png) 
+[<img src="/screenshots/screnshot2.png" width="250" />](screenshot2.png) 
 
 
 #### DataModels
