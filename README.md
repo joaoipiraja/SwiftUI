@@ -51,7 +51,7 @@ let listDataModel = [DataModel]()
 
 ```
 ##### ```struct DataModel: Identifiable ```
-Allows to identify each row of the list as unique. The struct need to have a "id" property
+Allows to identify each row of the list as unique. The struct need to have ```var id: ObjectIdentifier```
 
 #### ``` @ObservedObject  var ``` and ```ObservableObject``` protocol
 its a better delegate
