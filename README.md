@@ -26,7 +26,7 @@ struct ContentView_Previews: PreviewProvider {
 #### ``` .onAppear() ```
 Same as ViewDidLoad()
 
-#### NavigationView, List, NavigationLink
+#### ```NavigationView```, ```List```, ```NavigationLink```
 A simple away to create table views
 ```
 let listDataModel = [DataModel]()
@@ -51,7 +51,7 @@ let listDataModel = [DataModel]()
 
 ```
 ##### ```struct DataModel: Identifiable ```
-Allows to identify each row of the list as unique
+Allows to identify each row of the list as unique. The struct need to have a "id" property
 
 #### ``` @ObservedObject  var ``` and ```ObservableObject``` protocol
 its a better delegate
