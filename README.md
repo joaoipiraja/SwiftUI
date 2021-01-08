@@ -79,11 +79,11 @@ Create space between elements
 Same as storyboard constraints
 
 ### StackViews
-##### ```HStack{} ```
+##### ```HStack(alignment:){} ```
 Allow to put the elements in horizontal alignment 
-##### ```VStack{} ```
+##### ```VStack(alignment:){} ```
 Allow to put the elements in vertical alignment
-##### ```ZStack{} ```
+##### ```ZStack(alignment:){} ```
 Allow to overlap the elements
 
 
@@ -92,7 +92,7 @@ Allow to overlap the elements
 ##### Set Color: ``` Color(UIColor(red: 0.87, green: 0.60, blue: 0.40, alpha: 1.00)).edgesIgnoringSafeArea(.all)``` 
 ##### Set Image: ``` Image(imageName).resizable().edgesIgnoringSafeArea(.all)``` 
 
-###### 🤯 Tip: The easiest way to work with Color is using Color(COLOR LITERAL)
+###### 🤯 Tip: The easiest way to work with Color is using ```Color(COLOR LITERAL)
 
 ### Button
 ```
@@ -210,6 +210,18 @@ struct InfoView: View {
 
 [<img src="/screenshots/screenshot1.png" width="250" />](screenshot1.png) 
 
+#### DiceView
+```Swift
+
+struct DiceView: View {
+    var n:Int
+    var body: some View {
+        Image("dice\(n)").resizable().aspectRatio(1, contentMode: .fit).padding()
+    }
+}
+
+```
+
 #### ContentView
 
 ```Swift 
@@ -254,17 +266,6 @@ struct ContentView: View {
 
 ```
 
-#### DiceView
-```Swift
-
-struct DiceView: View {
-    var n:Int
-    var body: some View {
-        Image("dice\(n)").resizable().aspectRatio(1, contentMode: .fit).padding()
-    }
-}
-
-```
 
 ## Hack News 
 
@@ -310,6 +311,7 @@ struct DetailView: View {
     }
 }
 ```
+
 #### NetworkManager
 ```Swift
 
