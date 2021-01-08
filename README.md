@@ -22,10 +22,10 @@ struct ContentView_Previews: PreviewProvider {
 
 # 
 
-#### ``` .onAppear() ```
+###  ``` .onAppear() ```
 Same as ViewDidLoad()
 
-#### ```NavigationView```, ```List```, ```NavigationLink```
+###  ```NavigationView```, ```List```, ```NavigationLink```
 A simple away to create table views
 ```
 let listDataModel = [DataModel]()
@@ -49,10 +49,10 @@ let listDataModel = [DataModel]()
         
 
 ```
-##### ```struct DataModel: Identifiable ```
+### ```struct DataModel: Identifiable ```
 Allows to identify each row of the list as unique. The struct need to have ```var id:Int```
 
-#### ``` @ObservedObject  var ``` and ```ObservableObject``` protocol
+###  ``` @ObservedObject  var ``` and ```ObservableObject``` protocol
 
 its a better delegate
 ``` 
@@ -68,11 +68,11 @@ struct Receiver{
 ```
 
 
-#### ``` @State var ```
+### ``` @State var ```
 refactor the view when is changed
 
 
-####  ``` Spacer() ```
+###  ``` Spacer() ```
 Create space between elements
 
 #### ``` .padding(.horizontal, 5) ```
@@ -127,7 +127,7 @@ Text("").font(.title)
 ```
 ##### Text Color: ```Text("").foregroundColor(.blue) ```
 
-##### WebView with UIViewRepresentable:
+### WebView with UIViewRepresentable:
 
 ```
 import WebKit
