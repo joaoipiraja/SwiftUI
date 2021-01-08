@@ -14,8 +14,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
-            .previewDisplayName("iPhone 12 Pro Max")
+        ContentView()
         
     }
 }
@@ -51,9 +50,10 @@ let listDataModel = [DataModel]()
 
 ```
 ##### ```struct DataModel: Identifiable ```
-Allows to identify each row of the list as unique. The struct need to have ```var id: ObjectIdentifier```
+Allows to identify each row of the list as unique. The struct need to have ```var id:Int```
 
 #### ``` @ObservedObject  var ``` and ```ObservableObject``` protocol
+
 its a better delegate
 ``` 
 struct Sender: ObservableObject{
@@ -61,7 +61,8 @@ struct Sender: ObservableObject{
 }
 
 struct Receiver{
-  @ObservedObject var message
+  @ObservedObject var recipient = Sender()
+  
 }
 
 ```
@@ -70,8 +71,6 @@ struct Receiver{
 #### ``` @State var ```
 refactor the view when is changed
 
-#### ``` @State var ```
-refactor the view when is changed
 
 ####  ``` Spacer() ```
 Create space between elements
@@ -301,34 +300,7 @@ struct Results:Decodable{
 
 ```
 
-#### ContentView
 
-```Swift
-
-struct ContentView: View {
-    
-    @ObservedObject var networkManager = NetworkManager()
-    var body: some View {
-        
-        NavigationView{
-            List(networkManager.posts){ post in
-                NavigationLink(
-                    destination: DetailView(url: post.url)){
-                    HStack{
-                        Text("\(post.points)").bold()
-                        Text(post.title)
-                    }
-                }
-            }
-            .navigationTitle("Hack News")
-        }
-        .onAppear(perform: {
-            self.networkManager.fetchData()
-        })
-    }
-}
-
-```
 #### DetailView
 ```Swift
 struct DetailView: View {
@@ -371,6 +343,35 @@ class NetworkManager: ObservableObject{
             }
             task.resume()
         }
+    }
+}
+
+```
+
+#### ContentView
+
+```Swift
+
+struct ContentView: View {
+    
+    @ObservedObject var networkManager = NetworkManager()
+    var body: some View {
+        
+        NavigationView{
+            List(networkManager.posts){ post in
+                NavigationLink(
+                    destination: DetailView(url: post.url)){
+                    HStack{
+                        Text("\(post.points)").bold()
+                        Text(post.title)
+                    }
+                }
+            }
+            .navigationTitle("Hack News")
+        }
+        .onAppear(perform: {
+            self.networkManager.fetchData()
+        })
     }
 }
 
